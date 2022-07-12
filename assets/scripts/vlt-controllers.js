@@ -1,10 +1,7 @@
-/***********************************************
- * INIT THIRD PARTY SCRIPTS
- ***********************************************/
+
 (function ($) {
 
 	'use strict';
-
 	/**
 	 * Onapage navigation
 	 */
@@ -1144,8 +1141,8 @@
 
 			if (size) {
 				VLTJS.body.find('.vlt-hover-reveal').css({
-					'width': size[0] + 'px',
-					'height': size[1] + 'px'
+					'width': '330px',
+					'height': '230px'
 				});
 			}
 

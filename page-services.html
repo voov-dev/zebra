@@ -5,28 +5,21 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>Skape - Service Single</title>
+    <title>Рекламное агентство Зебра</title>
     <meta name="description" content="Creative &amp; Modern Agency HTML5 Template" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!--Favicon-->
     <link rel="icon" type="image/svg" href="assets/img/root/favicon.svg" />
-    <!--Framework-->
     <link rel="stylesheet" href="assets/css/framework/bootstrap.min.css" />
-    <!--Fonts-->
     <link rel="stylesheet" href="assets/fonts/Swansea/style.css" />
     <link rel="stylesheet" href="assets/fonts/Skape/style.css" />
     <link rel="stylesheet" href="assets/fonts/Socicons/socicon.css" />
-    <!--Plugins-->
     <link rel="stylesheet" href="assets/css/vlt-plugins.min.css" />
-    <!--Style-->
     <link rel="stylesheet" href="assets/css/vlt-main.min.css" />
-    <!--Custom-->
     <link rel="stylesheet" href="assets/css/custom.css" />
   </head>
 
   <body>
-    <!--Site preloader-->
     <div class="vlt-site-preloader" data-animate-to="M0 0h240v90H0z">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="90">
         <defs>
@@ -44,11 +37,11 @@
         </g>
       </svg>
     </div>
-    <!--Header-->
+
     <div class="d-none d-lg-block">
       <header class="vlt-header vlt-header--fullscreen">
         <div
-          class="vlt-navbar vlt-navbar--main vlt-navbar--transparent vlt-navbar--sticky vlt-navbar--white-text-on-top"
+          class="vlt-navbar vlt-navbar--main vlt-navbar--transparent vlt-navbar--sticky vlt-navbar--white-text-on-top vlt-nav--default"
         >
           <div class="container">
             <div class="vlt-navbar-inner">
@@ -71,11 +64,77 @@
               </div>
               <div class="vlt-navbar-inner--right">
                 <div class="d-flex align-items-center justify-content-center h-100">
+                  <nav class="vlt-nav vlt-nav--default">
+                    <!--Menu-->
+                    <ul class="sf-menu" data-back-text="Назад">
+                      <li class="menu-item-has-children">
+                        <a href="index.html"><span>Услуги</span></a>
+                        <ul class="sub-menu">
+                          <li class="current-menu-item">
+                            <a href="homepage-01.html"><span>Наружная реклама</span></a>
+                          </li>
+                          <li class="menu-item-has-children">
+                            <a href="homepage-02.html"><span>Полиграфия</span></a>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="blog-grid-1-col.html"><span>Блокноты</span></a>
+                              </li>
+                              <li>
+                                <a href="blog-grid-2-col.html"><span>Буклеты</span></a>
+                              </li>
+                              <li>
+                                <a href="blog-grid-3-col.html"><span>Визитки</span></a>
+                              </li>
+                              <li>
+                                <a href="blog-grid-4-col.html"><span>Дисконтные карты</span></a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="homepage-03.html"><span>Дизайн</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-04.html"><span>Интерьерная реклама</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-05.html"><span>Сувенирная продукция</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-06.html"><span>Печати и штампы</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-07.html"><span>Широкоформатная печать</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-08.html"><span>Дополнительно</span></a>
+                          </li>
+                          <li>
+                            <a href="homepage-09.html"><span>Студентам</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="work-asymmetric-01.html"><span>Кто мы</span></a>
+                      </li>
+                      <li>
+                        <a href="about-us.html"><span>Клиенты</span></a>
+                      </li>
+                      <li>
+                        <a href="blog-grid-1-col.html"><span>Работы</span></a>
+                      </li>
+
+                      <li>
+                        <a href="blog-grid-1-col.html"><span>Полезное</span></a>
+                      </li>
+
+                      <li>
+                        <a href="blog-grid-1-col.html"><span>Контакты</span></a>
+                      </li>
+                    </ul>
+                  </nav>
                   <!--Buttons-->
                   <div class="vlt-navbar-buttons d-flex align-items-center">
-                    <a class="vlt-menu-burger js-fullscreen-menu-toggle" href="#"
-                      ><span class="line-one"></span><span class="line-two"></span
-                    ></a>
+                    <a class="vlt-search-icon js-search-form-open" href="#"><i class="icon-search"></i></a>
                   </div>
                 </div>
               </div>
@@ -83,351 +142,136 @@
           </div>
         </div>
       </header>
-      <nav class="vlt-nav vlt-nav--fullscreen" data-submenu-effect="style-1">
-        <div class="vlt-nav--fullscreen__mask">
-          <svg xmlns="http://www.w3.org/2000/svg" width="895" height="267">
-            <path
-              fill="none"
-              fill-rule="nonzero"
-              stroke="currentColor"
-              stroke-width="2"
-              d="M376.98 63.08c22.08 0 39.72 4.8 52.92 14.4 13.2 9.6 22.68 22.44 28.44 38.52 5.76 16.08 8.64 33.6 8.64 52.56h0v9H334.86c0 15.36 4.08 27 12.24 34.92 7.92 8.16 19.08 12.24 33.48 12.24 7.44 0 14.28-2.04 20.52-6.12s10.2-9 11.88-14.76h51.84c-4.08 13.44-10.08 24.48-18 33.12-8.16 9.12-17.88 16.08-29.16 20.88-11.76 4.8-24.12 7.2-37.08 7.2-63.84 0-95.76-34.92-95.76-104.76 0-16.56 3.12-32.4 9.36-47.52 6.24-15.12 16.32-27.12 30.24-36 14.16-9.12 31.68-13.68 52.56-13.68zM81.06 1.16l46.44 204.12L174.66 1.16h78.12V260h-50.76V43.28l-.72.72-47.88 216h-53.28L52.98 43.28l-.72.72v216H1.5V1.16h79.56zm295.2 103.32c-22.56 0-35.64 13.68-39.24 41.04h78.12c-.96-12.24-5.04-22.32-12.24-30.24-7.2-7.2-16.08-10.8-26.64-10.8zM550.86 260V150.2c0-12 3.12-22.44 9.36-31.32 6.24-8.64 16.2-12.96 29.88-12.96 14.4 0 23.52 3.36 27.36 10.08 3.84 6.72 5.76 16.08 5.76 28.08V260h50.76V127.16c0-13.44-2.64-24.96-7.92-34.56-5.28-9.36-12.96-16.68-23.04-21.96-10.32-5.04-22.32-7.56-36-7.56-25.92 0-45.36 11.04-58.32 33.12V68.12h-48.6V260h50.76zm235.44 5.04c12.96 0 24.24-2.64 33.84-7.92 9.6-5.28 18-13.2 25.2-23.76V260h47.88V68.12h-50.04V179c0 10.56-1.92 18.96-5.76 25.2-3.84 6.72-8.88 11.4-15.12 14.04-6.48 2.88-12.6 4.32-18.36 4.32-21.6 0-32.4-11.88-32.4-35.64V68.12h-50.76v126.36c0 23.04 6 40.56 18 52.56s27.84 18 47.52 18z"
-            />
-          </svg>
+      <div class="vlt-search-popup vlt-search-popup--white">
+        <div class="vlt-search-popup__header">
+          <div class="container">
+            <a class="vlt-search-icon-close js-search-form-close" href="#"><i class="icon-cross"></i></a>
+          </div>
         </div>
-        <div class="vlt-nav-table">
-          <div class="vlt-nav-row">
-            <div class="vlt-nav--fullscreen__header">
-              <div class="container">
-                <div class="d-flex align-items-center justify-content-between">
-                  <!--Logo--><a class="vlt-navbar-logo" href="index.html"
-                    ><img src="assets/img/root/logo-black.png" alt="" style="height: 25px" loading="lazy" /></a
-                  ><a class="vlt-menu-burger js-fullscreen-menu-toggle" href="#"
-                    ><span class="line-one"></span><span class="line-two"></span
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vlt-nav-row vlt-nav-row--full vlt-nav-row--center">
-            <div class="container">
-              <div class="vlt-nav--fullscreen__navigation">
-                <!--Navigation-->
-                <!--Menu-->
-                <ul class="sf-menu" data-back-text="Назад">
-                  <li class="menu-item-has-children">
-                    <a href="index.html"><span>Home</span></a>
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="homepage-01.html"><span>Home 01</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-02.html"><span>Home 02</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-03.html"><span>Home 03</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-04.html"><span>Home 04</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-05.html"><span>Home 05</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-06.html"><span>Home 06</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-07.html"><span>Home 07</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-08.html"><span>Home 08</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-09.html"><span>Home 09</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-10.html"><span>Home 10</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-11.html"><span>Home 11</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-12.html"><span>Home 12</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="work-asymmetric-01.html"><span>Work</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="work-asymmetric-01.html"><span>Asymmetric</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-asymmetric-01.html"><span>Asymmetric 01</span></a>
-                          </li>
-                          <li>
-                            <a href="work-asymmetric-02.html"><span>Asymmetric 02</span></a>
-                          </li>
-                          <li>
-                            <a href="work-asymmetric-03.html"><span>Asymmetric 03</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-masonry-1-col.html"><span>Masonry</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-masonry-1-col.html"><span>Masonry 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-2-col.html"><span>Masonry 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-3-col.html"><span>Masonry 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-4-col.html"><span>Masonry 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-grid-1-col.html"><span>Grid</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-grid-1-col.html"><span>Grid 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-2-col.html"><span>Grid 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-3-col.html"><span>Grid 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-4-col.html"><span>Grid 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-wide-1-col.html"><span>Wide</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-wide-1-col.html"><span>Wide 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-2-col.html"><span>Wide 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-3-col.html"><span>Wide 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-4-col.html"><span>Wide 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-tooltip-01.html"><span>Tooltip</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-tooltip-01.html"><span>Tooltip 01</span></a>
-                          </li>
-                          <li>
-                            <a href="work-tooltip-02.html"><span>Tooltip 02</span></a>
-                          </li>
-                          <li>
-                            <a href="work-tooltip-02-dark.html"><span>Tooltip 02 Dark</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-carousel-grid.html"><span>Carousel</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-carousel-grid.html"><span>Carousel Grid</span></a>
-                          </li>
-                          <li>
-                            <a href="work-carousel-masonry.html"><span>Carousel Masonry</span></a>
-                          </li>
-                          <li>
-                            <a href="work-carousel-wide.html"><span>Carousel Wide</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="single-work-01.html"><span>Single Work</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="single-work-01.html"><span>Work 01</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-02.html"><span>Work 02</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-03.html"><span>Work 03</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-04.html"><span>Work 04</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children left">
-                    <a href="about-us.html"><span>Pages</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="about-us.html"><span>About</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="about-us.html"><span>About Us</span></a>
-                          </li>
-                          <li>
-                            <a href="about-me.html"><span>About Me</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="services-01.html"><span>Services</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="services-01.html"><span>Services 01</span></a>
-                          </li>
-                          <li>
-                            <a href="services-02.html"><span>Services 02</span></a>
-                          </li>
-                          <li class="current-menu-item">
-                            <a href="service-single.html"><span>Service Single</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="careers.html"><span>Careers</span></a>
-                      </li>
-                      <li>
-                        <a href="careers-single.html"><span>Careers Single</span></a>
-                      </li>
-                      <li>
-                        <a href="our-team.html"><span>Our Team</span></a>
-                      </li>
-                      <li>
-                        <a href="coming-soon.html"><span>Coming Soon</span></a>
-                      </li>
-                      <li>
-                        <a href="page-404.html"><span>Page 404</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children left">
-                    <a href="blog-grid-1-col.html"><span>Blog</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="blog-grid-1-col.html"><span>Grid</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="blog-grid-1-col.html"><span>Grid 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-2-col.html"><span>Grid 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-3-col.html"><span>Grid 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-4-col.html"><span>Grid 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="blog-masonry-2-col.html"><span>Masonry</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="blog-masonry-2-col.html"><span>Masonry 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-masonry-3-col.html"><span>Masonry 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-masonry-4-col.html"><span>Masonry 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="blog-listing.html"><span>Listing</span></a>
-                      </li>
-                      <li>
-                        <a href="blog-right-sidebar.html"><span>Right Sidebar</span></a>
-                      </li>
-                      <li>
-                        <a href="blog-tooltip.html"><span>Tooltip</span></a>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="single-post-01.html"><span>Single Post</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="single-post-01.html"><span>Post 01</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-02.html"><span>Post 02</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-03.html"><span>Post 03</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-04.html"><span>Post 04</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu-item-has-children left">
-                    <a href="contact-01.html"><span>Contact</span></a>
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="contact-01.html"><span>Contact 01</span></a>
-                      </li>
-                      <li>
-                        <a href="contact-02.html"><span>Contact 02</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="vlt-nav-row">
-            <div class="vlt-nav--fullscreen__footer">
-              <div class="container">
-                <div class="d-flex justify-content-between align-items-end">
-                  <!--Widget-->
-                  <div class="vlt-widget vlt-widget--socials">
-                    <a class="vlt-social-icon vlt-social-icon--style-1" href="#">Fb.</a
-                    ><a class="vlt-social-icon vlt-social-icon--style-1" href="#">Tw.</a
-                    ><a class="vlt-social-icon vlt-social-icon--style-1" href="#">In.</a
-                    ><a class="vlt-social-icon vlt-social-icon--style-1" href="#">Ln.</a>
-                  </div>
-                  <!--Widget-->
-                  <div class="vlt-widget vlt-widget--html">
-                    <div class="text-right">
-                      <!--Simple link--><a
-                        class="vlt-simple-link vlt-simple-link--sm"
-                        href="mailto:hello@skape.com"
-                        target="_self"
-                        >hello@skape.com</a
-                      ><br />
-                      <!--Simple link--><a
-                        class="vlt-simple-link vlt-simple-link--sm"
-                        href="tel:8589235899"
-                        target="_self"
-                        >858-923-5899</a
-                      >
-                    </div>
-                  </div>
-                </div>
+        <div class="vlt-search-popup__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <form class="vlt-search-form">
+                  <input type="text" placeholder="Что вы ищете?" />
+                  <button><i class="icon-search"></i></button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
+    <div class="vlt-site-overlay"></div>
+    <nav class="vlt-nav vlt-nav--fullscreen" data-submenu-effect="style-1">
+      <div class="vlt-nav-table">
+        <div class="vlt-nav-row">
+          <div class="vlt-nav--fullscreen__header">
+            <div class="container">
+              <div class="d-flex align-items-center justify-content-between">
+                <!--Logo--><a class="vlt-navbar-logo" href="index.html"
+                  ><img src="assets/img/root/logo-black.png" alt="" style="height: 25px" loading="lazy" /></a
+                ><a class="vlt-menu-burger js-fullscreen-menu-toggle" href="#"
+                  ><span class="line-one"></span><span class="line-two"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vlt-nav-row vlt-nav-row--full vlt-nav-row--center">
+          <div class="container">
+            <div class="vlt-nav--fullscreen__navigation">
+              <!--Navigation-->
+              <!--Menu-->
+              <ul class="sf-menu" data-back-text="Назад">
+                <li class="menu-item-has-children">
+                  <a href="index.html"><span>Услуги</span></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="homepage-01.html"><span>Наружная реклама</span></a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="homepage-02.html"><span>Полиграфия</span></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="blog-grid-1-col.html"><span>Блокноты</span></a>
+                        </li>
+                        <li>
+                          <a href="blog-grid-2-col.html"><span>Буклеты</span></a>
+                        </li>
+                        <li>
+                          <a href="blog-grid-3-col.html"><span>Визитки</span></a>
+                        </li>
+                        <li>
+                          <a href="blog-grid-4-col.html"><span>Дисконтные карты</span></a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="homepage-03.html"><span>Дизайн</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-04.html"><span>Интерьерная реклама</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-05.html"><span>Сувенирная продукция</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-06.html"><span>Печати и штампы</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-07.html"><span>Широкоформатная печать</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-08.html"><span>Дополнительно</span></a>
+                    </li>
+                    <li>
+                      <a href="homepage-09.html"><span>Студентам</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="work-asymmetric-01.html"><span>Кто мы</span></a>
+                </li>
+                <li>
+                  <a href="about-us.html"><span>Клиенты</span></a>
+                </li>
+                <li>
+                  <a href="blog-grid-1-col.html"><span>Работы</span></a>
+                </li>
+                <li>
+                  <a href="contact-01.html"><span>Полезное</span></a>
+                </li>
+                <li>
+                  <a href="contact-01.html"><span>Контакты</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="vlt-nav-row">
+          <div class="vlt-nav--fullscreen__footer">
+            <div class="container">
+              <div class="d-flex justify-content-end align-items-end">
+                <div class="vlt-widget vlt-widget--html">
+                  <div class="text-right">
+                    <!--Simple link--><a
+                      class="vlt-simple-link vlt-simple-link--sm"
+                      href="mailto:zebra-print3@yandex.ru"
+                      target="_self"
+                      >zebra-print3@yandex.ru</a
+                    ><br />
+                    <a class="vlt-simple-link vlt-simple-link--sm" href="tel:+74722777-41" target="_self"
+                      >+7 (4722) 777-41</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="d-lg-none d-sm-block">
       <header class="vlt-header vlt-header--fullscreen">
         <div
@@ -467,17 +311,6 @@
         </div>
       </header>
       <nav class="vlt-nav vlt-nav--fullscreen" data-submenu-effect="style-1">
-        <div class="vlt-nav--fullscreen__mask">
-          <svg xmlns="http://www.w3.org/2000/svg" width="895" height="267">
-            <path
-              fill="none"
-              fill-rule="nonzero"
-              stroke="currentColor"
-              stroke-width="2"
-              d="M376.98 63.08c22.08 0 39.72 4.8 52.92 14.4 13.2 9.6 22.68 22.44 28.44 38.52 5.76 16.08 8.64 33.6 8.64 52.56h0v9H334.86c0 15.36 4.08 27 12.24 34.92 7.92 8.16 19.08 12.24 33.48 12.24 7.44 0 14.28-2.04 20.52-6.12s10.2-9 11.88-14.76h51.84c-4.08 13.44-10.08 24.48-18 33.12-8.16 9.12-17.88 16.08-29.16 20.88-11.76 4.8-24.12 7.2-37.08 7.2-63.84 0-95.76-34.92-95.76-104.76 0-16.56 3.12-32.4 9.36-47.52 6.24-15.12 16.32-27.12 30.24-36 14.16-9.12 31.68-13.68 52.56-13.68zM81.06 1.16l46.44 204.12L174.66 1.16h78.12V260h-50.76V43.28l-.72.72-47.88 216h-53.28L52.98 43.28l-.72.72v216H1.5V1.16h79.56zm295.2 103.32c-22.56 0-35.64 13.68-39.24 41.04h78.12c-.96-12.24-5.04-22.32-12.24-30.24-7.2-7.2-16.08-10.8-26.64-10.8zM550.86 260V150.2c0-12 3.12-22.44 9.36-31.32 6.24-8.64 16.2-12.96 29.88-12.96 14.4 0 23.52 3.36 27.36 10.08 3.84 6.72 5.76 16.08 5.76 28.08V260h50.76V127.16c0-13.44-2.64-24.96-7.92-34.56-5.28-9.36-12.96-16.68-23.04-21.96-10.32-5.04-22.32-7.56-36-7.56-25.92 0-45.36 11.04-58.32 33.12V68.12h-48.6V260h50.76zm235.44 5.04c12.96 0 24.24-2.64 33.84-7.92 9.6-5.28 18-13.2 25.2-23.76V260h47.88V68.12h-50.04V179c0 10.56-1.92 18.96-5.76 25.2-3.84 6.72-8.88 11.4-15.12 14.04-6.48 2.88-12.6 4.32-18.36 4.32-21.6 0-32.4-11.88-32.4-35.64V68.12h-50.76v126.36c0 23.04 6 40.56 18 52.56s27.84 18 47.52 18z"
-            />
-          </svg>
-        </div>
         <div class="vlt-nav-table">
           <div class="vlt-nav-row">
             <div class="vlt-nav--fullscreen__header">
@@ -499,278 +332,65 @@
                 <!--Menu-->
                 <ul class="sf-menu" data-back-text="Назад">
                   <li class="menu-item-has-children">
-                    <a href="index.html"><span>Home</span></a>
+                    <a href="index.html"><span>Услуги</span></a>
                     <ul class="sub-menu">
                       <li>
-                        <a href="homepage-01.html"><span>Home 01</span></a>
+                        <a href="homepage-01.html"><span>Наружная реклама</span></a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="homepage-02.html"><span>Полиграфия</span></a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="blog-grid-1-col.html"><span>Блокноты</span></a>
+                          </li>
+                          <li>
+                            <a href="blog-grid-2-col.html"><span>Буклеты</span></a>
+                          </li>
+                          <li>
+                            <a href="blog-grid-3-col.html"><span>Визитки</span></a>
+                          </li>
+                          <li>
+                            <a href="blog-grid-4-col.html"><span>Дисконтные карты</span></a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <a href="homepage-02.html"><span>Home 02</span></a>
+                        <a href="homepage-03.html"><span>Дизайн</span></a>
                       </li>
                       <li>
-                        <a href="homepage-03.html"><span>Home 03</span></a>
+                        <a href="homepage-04.html"><span>Интерьерная реклама</span></a>
                       </li>
                       <li>
-                        <a href="homepage-04.html"><span>Home 04</span></a>
+                        <a href="homepage-05.html"><span>Сувенирная продукция</span></a>
                       </li>
                       <li>
-                        <a href="homepage-05.html"><span>Home 05</span></a>
+                        <a href="homepage-06.html"><span>Печати и штампы</span></a>
                       </li>
                       <li>
-                        <a href="homepage-06.html"><span>Home 06</span></a>
+                        <a href="homepage-07.html"><span>Широкоформатная печать</span></a>
                       </li>
                       <li>
-                        <a href="homepage-07.html"><span>Home 07</span></a>
+                        <a href="homepage-08.html"><span>Дополнительно</span></a>
                       </li>
                       <li>
-                        <a href="homepage-08.html"><span>Home 08</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-09.html"><span>Home 09</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-10.html"><span>Home 10</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-11.html"><span>Home 11</span></a>
-                      </li>
-                      <li>
-                        <a href="homepage-12.html"><span>Home 12</span></a>
+                        <a href="homepage-09.html"><span>Студентам</span></a>
                       </li>
                     </ul>
                   </li>
-                  <li class="menu-item-has-children">
-                    <a href="work-asymmetric-01.html"><span>Work</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="work-asymmetric-01.html"><span>Asymmetric</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-asymmetric-01.html"><span>Asymmetric 01</span></a>
-                          </li>
-                          <li>
-                            <a href="work-asymmetric-02.html"><span>Asymmetric 02</span></a>
-                          </li>
-                          <li>
-                            <a href="work-asymmetric-03.html"><span>Asymmetric 03</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-masonry-1-col.html"><span>Masonry</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-masonry-1-col.html"><span>Masonry 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-2-col.html"><span>Masonry 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-3-col.html"><span>Masonry 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-masonry-4-col.html"><span>Masonry 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-grid-1-col.html"><span>Grid</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-grid-1-col.html"><span>Grid 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-2-col.html"><span>Grid 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-3-col.html"><span>Grid 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-grid-4-col.html"><span>Grid 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-wide-1-col.html"><span>Wide</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-wide-1-col.html"><span>Wide 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-2-col.html"><span>Wide 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-3-col.html"><span>Wide 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="work-wide-4-col.html"><span>Wide 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-tooltip-01.html"><span>Tooltip</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-tooltip-01.html"><span>Tooltip 01</span></a>
-                          </li>
-                          <li>
-                            <a href="work-tooltip-02.html"><span>Tooltip 02</span></a>
-                          </li>
-                          <li>
-                            <a href="work-tooltip-02-dark.html"><span>Tooltip 02 Dark</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="work-carousel-grid.html"><span>Carousel</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="work-carousel-grid.html"><span>Carousel Grid</span></a>
-                          </li>
-                          <li>
-                            <a href="work-carousel-masonry.html"><span>Carousel Masonry</span></a>
-                          </li>
-                          <li>
-                            <a href="work-carousel-wide.html"><span>Carousel Wide</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="single-work-01.html"><span>Single Work</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="single-work-01.html"><span>Work 01</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-02.html"><span>Work 02</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-03.html"><span>Work 03</span></a>
-                          </li>
-                          <li>
-                            <a href="single-work-04.html"><span>Work 04</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                  <li>
+                    <a href="work-asymmetric-01.html"><span>Кто мы</span></a>
                   </li>
-                  <li class="menu-item-has-children left">
-                    <a href="about-us.html"><span>Pages</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="about-us.html"><span>About</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="about-us.html"><span>About Us</span></a>
-                          </li>
-                          <li>
-                            <a href="about-me.html"><span>About Me</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="services-01.html"><span>Services</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="services-01.html"><span>Services 01</span></a>
-                          </li>
-                          <li>
-                            <a href="services-02.html"><span>Services 02</span></a>
-                          </li>
-                          <li class="current-menu-item">
-                            <a href="service-single.html"><span>Service Single</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="careers.html"><span>Careers</span></a>
-                      </li>
-                      <li>
-                        <a href="careers-single.html"><span>Careers Single</span></a>
-                      </li>
-                      <li>
-                        <a href="our-team.html"><span>Our Team</span></a>
-                      </li>
-                      <li>
-                        <a href="coming-soon.html"><span>Coming Soon</span></a>
-                      </li>
-                      <li>
-                        <a href="page-404.html"><span>Page 404</span></a>
-                      </li>
-                    </ul>
+                  <li>
+                    <a href="about-us.html"><span>Клиенты</span></a>
                   </li>
-                  <li class="menu-item-has-children left">
-                    <a href="blog-grid-1-col.html"><span>Blog</span></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children left">
-                        <a href="blog-grid-1-col.html"><span>Grid</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="blog-grid-1-col.html"><span>Grid 1 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-2-col.html"><span>Grid 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-3-col.html"><span>Grid 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-4-col.html"><span>Grid 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="blog-masonry-2-col.html"><span>Masonry</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="blog-masonry-2-col.html"><span>Masonry 2 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-masonry-3-col.html"><span>Masonry 3 Col</span></a>
-                          </li>
-                          <li>
-                            <a href="blog-masonry-4-col.html"><span>Masonry 4 Col</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="blog-listing.html"><span>Listing</span></a>
-                      </li>
-                      <li>
-                        <a href="blog-right-sidebar.html"><span>Right Sidebar</span></a>
-                      </li>
-                      <li>
-                        <a href="blog-tooltip.html"><span>Tooltip</span></a>
-                      </li>
-                      <li class="menu-item-has-children left">
-                        <a href="single-post-01.html"><span>Single Post</span></a>
-                        <ul class="sub-menu">
-                          <li>
-                            <a href="single-post-01.html"><span>Post 01</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-02.html"><span>Post 02</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-03.html"><span>Post 03</span></a>
-                          </li>
-                          <li>
-                            <a href="single-post-04.html"><span>Post 04</span></a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                  <li>
+                    <a href="blog-grid-1-col.html"><span>Работы</span></a>
                   </li>
-                  <li class="menu-item-has-children left">
-                    <a href="contact-01.html"><span>Contact</span></a>
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="contact-01.html"><span>Contact 01</span></a>
-                      </li>
-                      <li>
-                        <a href="contact-02.html"><span>Contact 02</span></a>
-                      </li>
-                    </ul>
+                  <li>
+                    <a href="contact-01.html"><span>Полезное</span></a>
+                  </li>
+                  <li>
+                    <a href="contact-01.html"><span>Контакты</span></a>
                   </li>
                 </ul>
               </div>
@@ -782,13 +402,10 @@
         </div>
       </nav>
     </div>
-    <!--Site overlay-->
     <div class="vlt-site-overlay"></div>
-    <!--Main-->
+
     <main class="vlt-main">
-      <!--Page content-->
       <div class="vlt-page-content">
-        <!--Page title-->
         <div class="vlt-page-title vlt-page-title--style-2 jarallax">
           <img class="jarallax-img" src="assets/img/banner-services.png" alt="" loading="lazy" />
           <div class="vlt-page-title__overlay"></div>
@@ -804,15 +421,120 @@
           </div>
         </div>
         <div id="content"></div>
-        <!--Section-->
-        <section class="has-black-color">
+
+        <section class="vlt-devide-section-wrapper position-relative">
+          <div class="vlt-gap-100"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-11 offset-md-1">
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                  <span class="vlt-display-1 has-primary-color">блокноты</span>
+                </div>
+                <div class="vlt-gap-30"></div>
+              </div>
+              <div class="col-md-5 offset-md-1">
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                  <h4>
+                    Блокнот с логотипоми<br />
+                    индивидуальным<br />
+                    дизайном
+                  </h4>
+                </div>
+                <div class="vlt-gap-40--sm"></div>
+                <div class="col-md-10 offset-md-1">
+                  <div class="vlt-stretch-block to-left vlt-devide-section">
+                    <div
+                      class="vlt-devide-section__swiper-box position-relative d-flex align-items-end justify-content-end"
+                    >
+                      <div
+                        class="vlt-content-slider"
+                        data-navigation-anchor=".vlt-careers-single-slider-anchor"
+                        data-gap=""
+                        data-loop=""
+                        data-speed=""
+                        data-autoplay=""
+                        data-autoplay-speed=""
+                        data-slides-centered=""
+                        data-slide-settings="{}"
+                        data-free-mode=""
+                        data-slider-offset=""
+                        data-mousewheel=""
+                      >
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="assets/img/services-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/img/services-1.png" alt="" loading="lazy" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="assets/img/services-1.png" alt="" loading="lazy" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="vlt-slider-controls vlt-slider-controls--style-2 vlt-testimonials-slider-anchor has-black-color has-white-background-color position-absolute"
+                      >
+                        <div class="vlt-swiper-button-prev">
+                          <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="vlt-swiper-pagination d-flex"></div>
+                        <div class="vlt-swiper-button-next">
+                          <i class="icon-arrow-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vlt-gap-120"></div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="100">
+                  <p class="fz-3">Наша компания специализируется на создании разной полиграфической продукции.</p>
+                </div>
+                <div class="vlt-gap-30"></div>
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="200">
+                  <p class="fz-3">
+                    Вы можете заказать блокнот в Белгороде<br />
+                    нужных параметров с доставкой в ваш офис.
+                  </p>
+                </div>
+                <div class="vlt-gap-30"></div>
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="200">
+                  <p class="fz-3">
+                    Мы предлагаем вам изготовление блокнотов различных форматов с символикой вашей организации. Вы
+                    можете выбрать любой вид переплёта:
+                  </p>
+                </div>
+
+                <div class="vlt-gap-50"></div>
+
+                <div class="vlt-animated-block" data-aos="fade" data-aos-delay="300">
+                  <div class="has-black-color">
+                    <ul class="vlt-styled-list vlt-styled-list--style-3">
+                      <li data-tooltip-image="assets/img/awork.png">На пружине</li>
+                      <li data-tooltip-image="assets/img/awork.png">На скобе</li>
+                      <li data-tooltip-image="assets/img/awork.png">С твердым переплётом</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vlt-gap-120"></div>
+        </section>
+
+        <section class="has-black-color work-carousel-wrapper">
           <div class="vlt-gap-120"></div>
           <div class="container">
             <div class="row align-items-center">
-              <div class="col-md-8 offset-md-1">
+              <div class="col-md-9">
                 <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="0">
                   <div class="vlt-section-title vlt-section-title--style-1">
-                    <h2 class="vlt-section-title__title">Latest Projects</h2>
+                    <h2 class="vlt-section-title__title">Наши работы</h2>
                   </div>
                 </div>
                 <div class="vlt-gap-30--sm"></div>
@@ -821,7 +543,7 @@
                 <div class="text-md-right has-black-color">
                   <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="100">
                     <a class="vlt-simple-link vlt-simple-link--md" href="work-grid-3-col.html" target="_self"
-                      >See all projects<i class="icon-arrow-top-right"></i
+                      >Смотреть все<i class="icon-arrow-top-right"></i
                     ></a>
                   </div>
                 </div>
@@ -832,7 +554,6 @@
             <div class="d-flex flex-grow-1 flex-shrink-1">
               <div class="container-fluid p-0 align-self-center">
                 <div class="vlt-gap-80"></div>
-                <!--Content slider-->
                 <div
                   class="vlt-content-slider"
                   data-navigation-anchor=".vlt-work-carousel-grid"
@@ -842,7 +563,7 @@
                   data-autoplay=""
                   data-autoplay-speed=""
                   data-slides-centered=""
-                  data-slide-settings='{"slides_to_show":5,"slides_to_show_tablet":2,"slides_to_show_mobile":1}'
+                  data-slide-settings='{"slides_to_show":6,"slides_to_show_tablet":2,"slides_to_show_mobile":1}'
                   data-free-mode=""
                   data-slider-offset="enable"
                   data-mousewheel="enable"
@@ -851,90 +572,84 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-1.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-1.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Composition</a></h5>
-                              <span class="vlt-work__category">Design</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-2.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-2.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Photography</a></h5>
-                              <span class="vlt-work__category">Photography</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-3.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-3.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Packaging</a></h5>
-                              <span class="vlt-work__category">Branding</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-4.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-2.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Fashion Photo</a></h5>
-                              <span class="vlt-work__category">Marketing</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-5.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-1.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Inspiration</a></h5>
-                              <span class="vlt-work__category">Branding</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
                       </div>
                       <div class="swiper-slide">
                         <div>
-                          <!--Portfolio item-->
                           <article class="vlt-work vlt-work--style-3">
                             <div class="vlt-work__media">
                               <a class="vlt-work__link has-cursor" href="#"></a
-                              ><img src="assets/img/portfolio/grid/grid-4-col-6.png" alt="" loading="lazy" />
+                              ><img src="assets/img/services-work-3.png" alt="" loading="lazy" />
                             </div>
                             <div class="vlt-work__meta">
-                              <h5 class="vlt-work__title"><a href="#">Creative Portrait</a></h5>
-                              <span class="vlt-work__category">Photography</span>
+                              <h5 class="vlt-work__title"><a href="#">Визитки</a></h5>
+                              <span class="vlt-work__category">Полиграфия</span>
                             </div>
                           </article>
                         </div>
@@ -944,36 +659,126 @@
                 </div>
               </div>
             </div>
-            <div class="flex-grow-0 flex-shrink-0">
-              <div class="container">
-                <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-auto">
-                    <!--Slider controls-->
-                    <div class="vlt-slider-controls vlt-slider-controls--style-1 vlt-work-carousel-grid">
-                      <div class="vlt-swiper-button-prev">Сюда</div>
-                      <span class="sep">|</span>
-                      <div class="vlt-swiper-button-next">Туда</div>
-                    </div>
-                  </div>
+
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-auto">
+                <div
+                  class="vlt-slider-controls vlt-slider-controls--style-3 vlt-work-carousel-grid has-white-color has-black-background-color position-absolute"
+                  style="bottom: 0; left: 0"
+                >
+                  <div class="vlt-swiper-button-prev">Сюда</div>
+                  <span class="sep">|</span>
+                  <div class="vlt-swiper-button-next">Туда</div>
                 </div>
-                <div class="vlt-gap-50"></div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="jarallax bg-blur">
+          <div class="vlt-gap-80"></div>
+          <img class="jarallax-img" src="assets/img/homepage-12-banner.png" alt="" loading="lazy" />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="vlt-service-wrap vlt-animated-block" data-aos="fade" data-aos-delay="600">
+                  <div class="vlt-service vlt-service--style-1">
+                    <div class="vlt-service__media">
+                      <svg width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.034 34a17.024 17.024 0 0 0 16.877-14.674 8.209 8.209 0 0 0-.8-4.922C28.45 5.542 15.33 17.808 15.332 6.8c0-4.75 0-6.8-3.4-6.8C3.4 0 0 9.68 0 17a17.021 17.021 0 0 0 17.034 17Zm5.912-17a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5Zm-11.048 7.65a2.55 2.55 0 1 1-5.1 0 2.55 2.55 0 0 1 5.1 0ZM7.648 6.8a2.55 2.55 0 1 1 0 5.098 2.55 2.55 0 0 1 0-5.098Zm-1.7 7.65a2.55 2.55 0 1 1 0 5.1 2.55 2.55 0 0 1 0-5.1Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </div>
+                    <div class="vlt-service__content">
+                      <h5 class="vlt-service__title has-white-color">Дизайн</h5>
+                      <p class="vlt-service__text has-white-color">
+                        Команда наших дизайнеров всегда подготовит оригинальные макеты и выполнит слодный препресс
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="vlt-service-wrap vlt-animated-block" data-aos="fade" data-aos-delay="600">
+                  <div class="vlt-service vlt-service--style-1">
+                    <div class="vlt-service__media">
+                      <svg width="36" height="39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.026 38.284c-.744-.154-1.5-.27-2.23-.471-2.166-.596-4.135-1.61-6.02-2.783-3.153-1.96-5.997-4.287-8.618-6.877-.052-.05-.094-.11-.158-.186l3.905-2.444c1.246.827 2.443 1.67 3.689 2.438 2.301 1.42 4.724 2.594 7.399 3.212a14.28 14.28 0 0 0 3.76.334.97.97 0 0 0 .445-.175c2.603-1.68 5.202-3.364 7.798-5.054a.696.696 0 0 1 .728-.078c1.455.576 2.96.902 4.546.857a32.766 32.766 0 0 1 3.07.062c-.205.135-.41.272-.615.406L18.396 38.17c-.052.035-.102.076-.149.114h-1.221ZM0 10.146 15.68 0c.701.634 1.385 1.277 2.094 1.889 2.489 2.145 5.102 4.113 8.045 5.619 1.603.82 3.266 1.51 5.08 1.647 1.114.083 2.239.036 3.358.047h1.082c-.15.112-.221.172-.299.224a25548.21 25548.21 0 0 1-16.58 11.008 1.148 1.148 0 0 1-.595.18c-2.054 0-3.955-.63-5.789-1.482-3.2-1.484-6.02-3.531-8.685-5.814-1.07-.915-2.073-1.912-3.105-2.873-.092-.085-.174-.18-.286-.3Z"
+                          fill="#fff"
+                        />
+                        <path
+                          d="m0 19.168 3.933-2.48c.893.618 1.759 1.247 2.656 1.833 2.325 1.522 4.761 2.828 7.457 3.62 1.514.447 3.094.642 4.674.577.174-.021.338-.086.478-.188a2132.72 2132.72 0 0 0 7.752-5.057.724.724 0 0 1 .762-.084c1.439.572 2.93.9 4.494.855 1.022-.028 2.037-.005 3.133-.005-.08.075-.165.145-.253.211-5.55 3.62-11.1 7.236-16.65 10.85-.159.096-.341.148-.528.15-1.789.007-3.473-.468-5.097-1.144-3.148-1.305-5.934-3.18-8.54-5.311-1.374-1.12-2.657-2.354-3.985-3.537-.096-.08-.177-.18-.286-.29Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </div>
+                    <div class="vlt-service__content">
+                      <h5 class="vlt-service__title has-white-color">Материалы</h5>
+                      <p class="vlt-service__text has-white-color">
+                        Работаем с разными материалами, премиум качаства, которые подчеркнут индивидуальность
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="vlt-service-wrap vlt-animated-block" data-aos="fade" data-aos-delay="600">
+                  <div class="vlt-service vlt-service--style-1">
+                    <div class="vlt-service__media">
+                      <svg width="35" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.418 26.807H3.63c-2.116-.006-3.625-1.51-3.628-3.626a4481.6 4481.6 0 0 1 0-10.234c0-2.114 1.513-3.616 3.632-3.623h2.783V3.642c0-2.14 1.507-3.641 3.648-3.642h14.288c2.143 0 3.64 1.503 3.644 3.646v3.205c0 .774-.475 1.304-1.163 1.306-.687.002-1.168-.53-1.168-1.3V3.616c0-.815-.475-1.285-1.293-1.285H10.048c-.825 0-1.294.463-1.296 1.28v5.713h22.616c1.738 0 3.116 1.037 3.517 2.652.076.318.112.645.11.973a2266.9 2266.9 0 0 1 0 10.234c0 2.116-1.511 3.618-3.63 3.624H28.58v3.968c-.007 2.093-1.516 3.606-3.61 3.607-4.98.005-9.962.005-14.944 0-2.092 0-3.602-1.516-3.61-3.608V27.24l.003-.434Zm11.09 5.245h7.437c.843 0 1.303-.465 1.304-1.31v-6.12c0-.844-.465-1.311-1.303-1.311H10.073c-.869 0-1.321.455-1.322 1.327v6.046c0 .918.446 1.368 1.357 1.368h7.4Zm13.99-16.896a2.334 2.334 0 0 0-2.782-2.303 2.336 2.336 0 1 0 2.782 2.303Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </div>
+                    <div class="vlt-service__content">
+                      <h5 class="vlt-service__title has-white-color">Оборудование</h5>
+                      <p class="vlt-service__text has-white-color">
+                        Современное оборудование обеспечивает максимальное качество для всех заказов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="vlt-service-wrap vlt-animated-block" data-aos="fade" data-aos-delay="600">
+                  <div class="vlt-service vlt-service--style-1">
+                    <div class="vlt-service__media">
+                      <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.325 14.065v1.875c-.021.074-.038.15-.049.226-.174 2.314-.84 4.48-2.048 6.46-2.38 3.9-5.818 6.297-10.316 7.144-.544.103-1.096.155-1.645.23h-1.874c-.095-.017-.19-.04-.284-.053-.627-.087-1.262-.144-1.878-.277-3.59-.778-6.538-2.615-8.767-5.53C.68 20.492-.26 16.373.675 11.88c.819-3.934 2.958-7.039 6.27-9.293C10.227.353 13.871-.416 17.787.21c2.833.452 5.33 1.66 7.471 3.567 2.599 2.32 4.225 5.199 4.836 8.636.098.55.155 1.103.231 1.652Zm-13.751-2.883V7.55c0-.582-.3-1.022-.797-1.213-.845-.323-1.686.287-1.689 1.24-.004 2.625 0 5.252-.007 7.878a1.574 1.574 0 0 0 .502 1.196 1480.23 1480.23 0 0 1 5.947 5.94c.093.1.194.193.3.28a1.242 1.242 0 0 0 1.942-.633c.154-.522-.013-.957-.39-1.328l-5.574-5.568a.712.712 0 0 1-.238-.558c.01-1.2.005-2.401.004-3.602Z"
+                          fill="#fff"
+                        />
+                      </svg>
+                    </div>
+                    <div class="vlt-service__content">
+                      <h5 class="vlt-service__title has-white-color">Сроки</h5>
+                      <p class="vlt-service__text has-white-color">
+                        Исполняем заказы в назначенный день и всегда уведамляем клиентов о готовности
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vlt-gap-80"></div>
+        </section>
+
         <section class="has-extra-light-gray-background-color">
           <div class="vlt-gap-120"></div>
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2">
-                <!--Animated block-->
                 <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
                   <span class="vlt-display-1 has-primary-color">Отзывы клиентов</span>
                 </div>
                 <div class="vlt-gap-70"></div>
-                <!--Animated block-->
                 <div class="vlt-animated-block" data-aos="fade" data-aos-delay="100">
-                  <!--Content slider-->
                   <div
                     class="vlt-content-slider"
                     data-navigation-anchor=".vlt-testimonials-slider-anchor"
@@ -991,7 +796,6 @@
                     <div class="swiper-container">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <!--Testimonial-->
                           <div class="vlt-testimonial vlt-testimonial--style-1">
                             <div class="vlt-testimonial__content">
                               « Очень остался доволен сотрудничеством.Компания Зебра в кратчайшие сроки поменяли вывески
@@ -1039,7 +843,6 @@
                     </div>
                   </div>
                   <div class="vlt-gap-80"></div>
-                  <!--Slider controls-->
                   <div
                     class="vlt-slider-controls vlt-slider-controls--style-1 vlt-testimonials-slider-anchor has-black-color"
                   >
@@ -1054,78 +857,255 @@
                 </div>
               </div>
             </div>
-            <div class="row justify-content-between align-items-center">
-              <div class="col-auto">
-                <div class="vlt-gap-70"></div>
-                <!--Animated block-->
-                <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="0">
-                  <!--Partner-->
-                  <div class="vlt-partner vlt-partner--center">
-                    <a href="#"
-                      ><img src="assets/img/root/clients/client-logo-01.png" alt="" loading="lazy" style="height: 30px"
-                    /></a>
+          </div>
+          <div class="vlt-gap-100"></div>
+          <div class="container-fluid">
+            <div class="vlt-content-marquee has-stopable" style="--speed: 15s">
+              <div class="vlt-content-marquee__original">
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-1.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-2.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-3.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-4.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-5.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-6.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-7.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-8.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-1.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-2.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-3.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-4.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-5.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-6.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-7.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-8.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-1.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-2.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-3.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-4.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-5.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-6.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-7.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="has-black-color" style="padding-right: 60px">
+                  <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+                    <div class="vlt-partner vlt-partner--center">
+                      <a href="#"><img src="assets/img/logo-8.png" alt="" loading="lazy" style="height: 100px" /></a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-auto">
-                <div class="vlt-gap-70"></div>
-                <!--Animated block-->
-                <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="100">
-                  <!--Partner-->
-                  <div class="vlt-partner vlt-partner--center">
-                    <a href="#"
-                      ><img src="assets/img/root/clients/client-logo-02.png" alt="" loading="lazy" style="height: 40px"
-                    /></a>
+            </div>
+          </div>
+          <div class="vlt-gap-100"></div>
+        </section>
+
+        <section>
+          <div class="vlt-gap-120"></div>
+          <div class="container">
+            <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+              <div class="vlt-section-title vlt-section-title--style-3">
+                <h4 class="vlt-section-title__title">Частые вопросы</h4>
+              </div>
+            </div>
+            <div class="vlt-gap-20"></div>
+            <div id="accordion">
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingOne"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Как можно оплатить заказ?
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Да, мы можем изготовить единичные экземпляры продукции, но стоимоть индивидуально нетиражного заказа
+                    значительно выше. Свяжитесь с нами и вы просчитаем удобный вариант
                   </div>
                 </div>
               </div>
-              <div class="col-auto">
-                <div class="vlt-gap-70"></div>
-                <!--Animated block-->
-                <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="200">
-                  <!--Partner-->
-                  <div class="vlt-partner vlt-partner--center">
-                    <a href="#"
-                      ><img src="assets/img/root/clients/client-logo-03.png" alt="" loading="lazy" style="height: 30px"
-                    /></a>
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingTwo"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  Можно заказать 1 блокнот?
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Да, мы можем изготовить единичные экземпляры продукции, но стоимоть индивидуально нетиражного заказа
+                    значительно выше. Свяжитесь с нами и вы просчитаем удобный вариант
                   </div>
                 </div>
               </div>
-              <div class="col-auto">
-                <div class="vlt-gap-70"></div>
-                <!--Animated block-->
-                <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="300">
-                  <!--Partner-->
-                  <div class="vlt-partner vlt-partner--center">
-                    <a href="#"
-                      ><img src="assets/img/root/clients/client-logo-04.png" alt="" loading="lazy" style="height: 40px"
-                    /></a>
-                  </div>
+              <div class="card">
+                <div
+                  class="card-header"
+                  id="headingThree"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  Есть ли у вас доставка?
                 </div>
-              </div>
-              <div class="col-auto">
-                <div class="vlt-gap-70"></div>
-                <!--Animated block-->
-                <div class="vlt-animated-block aos-init aos-animate" data-aos="fade" data-aos-delay="400">
-                  <!--Partner-->
-                  <div class="vlt-partner vlt-partner--center">
-                    <a href="#"
-                      ><img src="assets/img/root/clients/client-logo-06.png" alt="" loading="lazy" style="height: 35px"
-                    /></a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Да, мы можем изготовить единичные экземпляры продукции, но стоимоть индивидуально нетиражного заказа
+                    значительно выше. Свяжитесь с нами и вы просчитаем удобный вариант
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="vlt-gap-120"></div>
-        </section>
-        <section>
-          <div class="vlt-gap-120"></div>
           <div class="container">
-            <div class="text-left">
-              <!--Animated block-->
+            <div class="text-left offset-md-1">
               <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
-                <!--Section title-->
                 <div class="vlt-section-title vlt-section-title--style-1">
                   <h2 class="vlt-section-title__title">Вам может понравиться</h2>
                 </div>
@@ -1135,7 +1115,6 @@
             <div class="vlt-isotope-grid" data-columns="3" data-layout="masonry" data-x-gap="30|30" data-y-gap="60|60">
               <div class="grid-sizer"></div>
               <div class="grid-item filter-design">
-                <!--Portfolio item-->
                 <article class="vlt-work vlt-work--style-1">
                   <div class="vlt-work__media">
                     <a class="vlt-work__link has-cursor" href="#"></a
@@ -1148,7 +1127,6 @@
                 </article>
               </div>
               <div class="grid-item filter-photography">
-                <!--Portfolio item-->
                 <article class="vlt-work vlt-work--style-1">
                   <div class="vlt-work__media">
                     <a class="vlt-work__link has-cursor" href="#"></a
@@ -1161,7 +1139,6 @@
                 </article>
               </div>
               <div class="grid-item filter-branding">
-                <!--Portfolio item-->
                 <article class="vlt-work vlt-work--style-1">
                   <div class="vlt-work__media">
                     <a class="vlt-work__link has-cursor" href="#"></a
@@ -1175,9 +1152,9 @@
               </div>
             </div>
           </div>
-          <div class="vlt-gap-120"></div>
+          <div class="vlt-gap-50"></div>
         </section>
-        <!--Page navigation-->
+
         <section>
           <div class="vlt-gap-50"></div>
           <div class="container">
@@ -1219,21 +1196,64 @@
               <div class="message danger">Извините, что-то пошло не так!</div>
               <div class="vlt-gap-40"></div>
               <div class="text-center">
-                <!--Button-->
                 <button class="vlt-btn vlt-btn--secondary vlt-btn--lg">Отправить</button>
               </div>
+              <div class="vlt-gap-30"></div>
+              <p class="text-center has-gray-color">
+                Отправляя данную форму вы соглашаетесь с
+                <a class="has-gray-color" href="#">политикой конфиденциальности</a>
+              </p>
             </form>
           </div>
-          <div class="vlt-gap-130"></div>
         </section>
       </div>
     </main>
-    <!--Footer-->
+
+    <div class="social-box">
+      <a href="#" class="social-box__link">
+        <svg class="social-box__icon" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)" fill="#fff">
+            <path
+              d="M4.6 18.07H2.33a2.175 2.175 0 0 1-1.553-.626C.247 16.934 0 16.29 0 15.53V2.597C0 1.055.982.001 2.42.001h18.156c1.44 0 2.421 1.05 2.422 2.593v12.883c0 1.542-.982 2.592-2.422 2.593-2.987 0-5.974.002-8.961.007a.674.674 0 0 0-.406.15 1144.73 1144.73 0 0 0-5.127 4.386c-.075.065-.15.13-.226.192-.256.205-.536.263-.832.105-.296-.159-.43-.423-.43-.77V18.42l.006-.35Zm1.537 2.393.215-.18c1.371-1.176 2.745-2.348 4.11-3.53.244-.221.555-.34.875-.332 3.082.01 6.163.012 9.245.006.585 0 .886-.32.887-.944V2.576c0-.608-.304-.933-.873-.933H2.418c-.582 0-.88.323-.88.95v12.882c0 .632.294.951.878.952h2.899c.504 0 .82.343.821.882v3.154Z"
+            />
+            <path
+              d="M11.5 8.214H5.42c-.586 0-.967-.56-.763-1.114a.795.795 0 0 1 .252-.365.714.714 0 0 1 .398-.158 1.74 1.74 0 0 1 .216-.003h11.953c.104-.005.207.001.31.018.181.04.343.149.456.307a.865.865 0 0 1 .156.553.841.841 0 0 1-.234.532.736.736 0 0 1-.508.225c-.526.012-1.053.005-1.58.005h-4.575ZM8.445 9.856h2.944c.527 0 .878.334.875.827-.002.493-.348.816-.86.816h-5.94c-.512 0-.86-.332-.862-.815-.004-.496.345-.827.873-.828h2.97Z"
+            />
+          </g>
+          <defs>
+            <clipPath id="a"><path fill="#fff" d="M0 0h23v23H0z" /></clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a href="#" class="social-box__link">
+        <svg class="social-box__icon" width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#a)" fill="#fff">
+            <path
+              d="M10.797 21h-.534c-.274-.03-.552-.065-.829-.091-1.307-.124-2.537-.503-3.709-1.09a.527.527 0 0 0-.346-.027c-1.09.302-2.177.62-3.267.925-.384.11-.778.19-1.168.283H.862c-.05-.019-.099-.042-.15-.055a.867.867 0 0 1-.658-.658 1.5 1.5 0 0 0-.055-.15v-.123c.045-.12.083-.244.136-.36.48-1.064.959-2.13 1.45-3.188.093-.2.095-.345-.025-.54a10.017 10.017 0 0 1-1.468-4.342c-.03-.312-.062-.622-.093-.933V10.2c.018-.093.04-.185.051-.279.063-.507.087-1.022.19-1.52.482-2.329 1.615-4.292 3.422-5.835C6.184.415 9.106-.386 12.366.172c2.407.411 4.433 1.574 6.027 3.427 2.233 2.594 3.05 5.61 2.38 8.956-.654 3.262-2.532 5.674-5.466 7.245a9.701 9.701 0 0 1-3.702 1.108c-.27.025-.539.061-.808.092Zm-8.262-2.3c.123-.027.195-.04.265-.06l2.586-.707a.994.994 0 0 1 .789.097c1.655.938 3.426 1.313 5.322 1.1 1.17-.13 2.283-.458 3.285-1.071 3.199-1.957 4.679-4.812 4.362-8.563a7.57 7.57 0 0 0-1.266-3.621C15.81 2.799 12.926 1.439 9.233 1.89c-1.74.213-3.262.954-4.544 2.14-2.22 2.056-3.15 4.613-2.803 7.615.164 1.401.685 2.681 1.502 3.834.251.353.281.707.098 1.097-.293.625-.573 1.256-.857 1.885-.028.063-.05.126-.094.24Z"
+            />
+            <path
+              d="M13.37 15.284c-.822 0-1.586-.244-2.317-.595-1.997-.961-3.629-2.353-4.83-4.227-.438-.68-.748-1.416-.818-2.23-.077-.902.288-1.839 1.222-2.381.37-.215.755-.17 1.097.087.552.416.81 1.014 1.005 1.651.18.58.063 1.079-.34 1.536-.475.543-.461.562-.06 1.162a6.941 6.941 0 0 0 3.18 2.623c.367.153.498.117.723-.214.1-.146.2-.294.288-.448.264-.46.638-.646 1.168-.515.565.14 1.092.354 1.535.74.543.474.635.999.29 1.63-.465.845-1.2 1.198-2.142 1.181Z"
+            />
+          </g>
+          <defs>
+            <clipPath id="a"><path fill="#fff" d="M0 0h21v21H0z" /></clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a href="#" class="social-box__link">
+        <svg class="social-box__icon" width="24" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.87 13.446c-.98-1.796-3.504-3.954-4.547-4.893a.699.699 0 0 1-.056-.987c1.99-2.176 3.58-4.677 4.128-6.188a1.027 1.027 0 0 0-.963-1.373h-2.047c-.675 0-1.07.247-1.258.64-1.653 3.449-3.072 4.941-4.064 5.814-.556.489-1.423.084-1.423-.66V1.201c0-.637-.511-1.153-1.143-1.153L8.758.005c-.47 0-.739.543-.456.923l.617.902c.233.313.358.694.358 1.084l-.003 4.064a.784.784 0 0 1-1.341.557C6.242 5.86 4.775 2.436 4.247.8A1.14 1.14 0 0 0 3.164.005L1.147 0C.391 0-.163.73.043 1.466c1.843 6.585 5.623 12.85 12.36 13.528.665.067 1.237-.477 1.237-1.15v-2.137c0-.612.472-1.139 1.079-1.154l.063-.001c1.782 0 3.778 2.64 4.476 3.876.201.355.576.572.982.572h2.713c.791 0 1.299-.855.918-1.554Z"
+            fill="#fff"
+          />
+        </svg>
+      </a>
+    </div>
+
     <footer class="vlt-footer vlt-footer--style-1 vlt-footer--fixed">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <!--Widget-->
+          <div class="col-lg-2">
             <div class="vlt-widget vlt-widget--html vlt-widget--white">
               <a href="index.html"
                 ><img src="assets/img/root/logo-white.png" alt="" style="height: 30px" loading="lazy"
@@ -1241,43 +1261,51 @@
             </div>
           </div>
           <div class="col-lg-2 col-sm-6">
-            <!--Widget-->
             <div class="vlt-widget vlt-widget--text vlt-widget--white">
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Кто мы</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Работы</a></li>
+                <li><a href="#">Полезное</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-2 col-sm-6">
-            <!--Widget-->
             <div class="vlt-widget vlt-widget--text vlt-widget--white">
               <ul>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Vkontakte</a></li>
                 <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">LinkedIn</a></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <!--Widget-->
             <div class="vlt-widget vlt-widget--text vlt-widget--white">
-              <p>38 NW Primrose Street <br />Fort Walton Beach, <br />FL 32547</p>
+              <p>Белгород, Победы 165</p>
+              <a href="tel:+74722777415">+7 (4722) 777-415 доб.2</a>
+              <br />
+              <a href="tel:+74722777480">+7 (4722) 777-480</a>
+              <br />
+              <a href="mailto:zebra-print3@yandex.ru">zebra-print3@yandex.ru</a>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-6">
-            <!--Widget-->
+          <div class="col-lg-3 col-sm-6">
             <div class="vlt-widget vlt-widget--text vlt-widget--white">
-              <a href="mailto:hello@skape.com">hello@skape.com</a>
+              <p>Белгород, Костюкова 36а</p>
+              <a href="tel:+74722777415">+7 (4722) 777-415 доб.1</a>
+              <br />
+              <a href="tel:+74722777480">+7 (4722) 777-360</a>
+              <br />
+              <a href="mailto:zebra-print@yandex.ru">zebra-print@yandex.ru</a>
             </div>
+          </div>
+          <div class="col-lg-12 d-flex justify-content-between align-items-end flex-wrap">
+            <a class="flex-grow-0" href="#">Политика<br />конфиденциальности</a>
+            <p class="flex-grow-0">ООО «‎Зебра» ‎ ИНН 312329567994 ОГРН 1093123001960</p>
           </div>
         </div>
       </div>
     </footer>
-    <!--Cursor-->
     <div class="vlt-cursor">
       <div class="outer">
         <div class="circle"></div>
@@ -1286,10 +1314,9 @@
         <div class="icon"><i class="icon-arrow-top-right"></i></div>
       </div>
     </div>
-    <!--Libs-->
     <script src="assets/vendors/jquery-3.5.1.min.js"></script>
-    <script src="assets/scripts/vlt-plugins.min.js"></script>
+    <script src="assets/scripts/vlt-plugins.js"></script>
     <script src="assets/scripts/vlt-helpers.js"></script>
-    <script src="assets/scripts/vlt-controllers.min.js"></script>
+    <script src="assets/scripts/vlt-controllers.js"></script>
   </body>
 </html>
