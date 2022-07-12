@@ -1248,7 +1248,7 @@ h6 {
   font-weight: 900;
   margin: 0;
   padding: 0;
-  color: #101010;
+  color: #2c2f35;
 }
 .h1 i,
 .h2 i,
@@ -7074,6 +7074,7 @@ dl dd {
 }
 .vlt-testimonial__content {
   font-size: 26px;
+  line-height: 38px;
   font-weight: 900;
   color: inherit;
 }
@@ -7130,7 +7131,7 @@ dl dd {
 }
 .vlt-testimonial--style-3 {
   max-width: 750px;
-  padding: 60px 140px 60px 80px;
+  padding: 60px 80px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 40px 0 rgba(16, 16, 16, 0.04);
   box-shadow: 0 0 40px 0 rgba(16, 16, 16, 0.04);
@@ -7295,6 +7296,7 @@ dl dd {
   height: 100%;
 }
 .vlt-types-list .vlt-types-list__item .vlt-types-list__content {
+  z-index: 10;
   width: 100%;
   padding: 0 30px;
   -webkit-transition: opacity 0.5s;
@@ -7667,4 +7669,14 @@ dl dd {
 .social-box__link:focus,
 .social-box__link:hover {
   opacity: 0.5;
+}
+.has-underline {
+  text-decoration: underline;
+}
+a.has-gray-color:focus,
+a.has-gray-color:hover,
+a.has-underline:focus,
+a.has-underline:hover {
+  color: inherit;
+  opacity: 0.7;
 }

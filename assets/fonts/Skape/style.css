@@ -8,26 +8,6 @@
   font-display: block;
 }
 
-@font-face {
-  font-display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-family: 'Kinetika';
-
-  font-display: swap;
-  src: url('fonts/kinetika-regular.woff2') format('woff2'), url('fonts/kinetika-regular.woff') format('woff');
-}
-
-@font-face {
-  font-display: block;
-  font-style: normal;
-  font-weight: 900;
-  font-family: 'Kinetika';
-
-  font-display: swap;
-  src: url('fonts/kinetika-black.woff2') format('woff2'), url('fonts/kinetika-black.woff') format('woff');
-}
-
 [class^='icon-'],
 [class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */

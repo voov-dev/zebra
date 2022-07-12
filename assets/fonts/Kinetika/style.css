@@ -1,0 +1,19 @@
+@font-face {
+  font-display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Kinetika';
+
+  font-display: swap;
+  src: url('kinetika-regular.woff2') format('woff2'), url('kinetika-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: block;
+  font-style: normal;
+  font-weight: 900;
+  font-family: 'Kinetika';
+
+  font-display: swap;
+  src: url('kinetika-black.woff2') format('woff2'), url('kinetika-black.woff') format('woff');
+}
