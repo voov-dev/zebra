@@ -2633,3 +2633,53 @@
 	VLTJS.typesList.init();
 
 })(jQuery);
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initPhoneMask();
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('#search')) {
+    const autoCompleteJS = new autoComplete({
+      selector: '#search',
+      placeHolder: 'Что вы ищете?',
+      wrapper: false,
+      data: {
+        src: [
+          'Объёмные буквы',
+          'Объёмные буквы #2',
+          'Объёмные буквы #3',
+          'Объёмные буквы #4',
+          'Объёмные буквы #5',
+          'Объёмные буквы #6',
+          'Объёмные буквы #7',
+          'Объёмные буквы #8',
+          'Объёмные буквы #9',
+          'Объёмные буквы #10',
+          'Объёмные буквы #11'
+        ],
+      },
+      debounce: 300,
+      resultsList: {
+        tag: 'ul',
+        id: 'search-box_results',
+        class: 'search-box__results',
+        destination: '.search-box__header',
+        maxResults: 5,
+        noResults: true,
+      },
+      resultItem: {
+        tag: 'li',
+        id: 'search-box_result',
+        class: 'search-box__result',
+        element: (item, data) => {
+          item.innerHTML = '<a class="search-box__headline">'+ data.match + '</a><span class="search-box__path">/blog/obemnie_bukvy</span><span class="search-box__lead">Объемные буквы создаются на нашем современно оборудовании. Весь процесс сопровождают специалисты, которые следят за исполнением... </span>';
+        },
+        highlight: true,
+        selected: 'search-box__result--selected',
+      },
+    });
+  }
+});
