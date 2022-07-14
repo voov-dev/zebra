@@ -807,7 +807,7 @@
 			$('.vlt-contact-form, .vlt-apply-position-form').each(function () {
 
 				var thisForm = $(this),
-					successMessage = thisForm.find('.message.success'),
+					successMessage = thisForm.find('.successOne'),
 					errorMessage = thisForm.find('.message.danger');
 
 				thisForm.validate({
@@ -824,10 +824,7 @@
 							contentType: false,
 							processData: false,
 							success: function () {
-								successMessage.fadeIn();
-								setTimeout(function () {
-									successMessage.fadeOut();
-								}, 5000);
+								successMessage.modal('show');
 							},
 							error: function () {
 								errorMessage.fadeIn();
@@ -2683,3 +2680,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+(function ($) {
+  if ($('#successOne').length) {
+    $('#successOne').on('shown.bs.modal', function () {
+      $('#successOne').trigger('focus')
+    })
+  }
+})(jQuery);
