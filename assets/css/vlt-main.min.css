@@ -4243,6 +4243,19 @@ dl dd {
   flex-basis: 20%;
   margin-right: auto;
 }
+
+@media screen and (orientation: landscape) {
+  .vlt-project-showcase--style-7 .vlt-slider-controls {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .vlt-page-title--style-2 h1.vlt-page-title__title {
+    font-size: 36px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .vlt-project-showcase--style-7 .vlt-project-showcase__socials,
   .vlt-project-showcase--style-7 .vlt-slider-controls {
@@ -6689,9 +6702,22 @@ dl dd {
 .vlt-stroke-text--lg {
   font-size: 130px;
 }
+@media only screen and (max-width: 920px) {
+  .vlt-stroke-text--lg {
+    font-size: 100px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .vlt-stroke-text--lg {
     font-size: 84px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .vlt-stroke-text--lg {
+    font-size: 48px;
+  }
+  h2.vlt-post-title {
+    font-size: 38px;
   }
 }
 .vlt-stroke-text--md {
@@ -7709,6 +7735,24 @@ dl dd {
   z-index: 100;
   padding: 30px 135px;
 }
+@media (max-width: 992px) {
+  .vlt-types-header {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+}
+.vlt-simple-link-more {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  z-index: 100;
+}
+@media (min-width: 992px) {
+  .vlt-simple-link-more {
+    bottom: 30px;
+    right: 60px;
+  }
+}
 .map-wrapper {
   background-color: #101010;
 }
@@ -7871,4 +7915,7 @@ a.has-underline:hover {
     padding: 95px 0;
     max-width: 950px;
   }
+}
+.col-auto {
+  min-width: 250px;
 }
