@@ -7925,7 +7925,7 @@ a.has-underline:hover {
 .modal-header {
   border: none;
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 997px) {
   .modal-header {
     padding: 5px;
   }
