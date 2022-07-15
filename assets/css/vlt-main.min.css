@@ -1296,6 +1296,12 @@ h1 {
   font-size: 70px;
   line-height: 1.15;
 }
+@media only screen and (max-width: 640px) {
+  .h1,
+  h1 {
+    font-size: 56px;
+  }
+}
 .h2,
 h2 {
   font-size: 46px;
@@ -1405,6 +1411,7 @@ select {
 textarea {
   width: 100%;
   max-width: 100%;
+  resize: none;
 }
 button:focus,
 input[type='submit']:focus {
@@ -2519,9 +2526,9 @@ dl dd {
   background-position: left bottom;
   background-size: 400px;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 819px) {
   .vlt-footer--style-1 [class^='col-'] + [class^='col-'] {
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 .vlt-footer--style-2 {
@@ -7725,6 +7732,7 @@ dl dd {
 .card-header__headline {
   flex-grow: 1;
   max-width: calc(100% - 45px);
+  width: 100%;
   font-weight: 900;
   font-size: 24px;
 }
@@ -7916,6 +7924,14 @@ a.has-underline:hover {
 }
 .modal-header {
   border: none;
+}
+@media screen and (orientation: landscape) {
+  .modal-header {
+    padding: 5px;
+  }
+  .modal-content [class^='vlt-gap-'] {
+    height: 15px;
+  }
 }
 @media (min-width: 576px) {
   .modal-dialog {
