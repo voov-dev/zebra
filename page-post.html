@@ -39,7 +39,7 @@
 
     <div class="d-none d-lg-block">
       <header class="vlt-header vlt-header--fullscreen">
-        <div class="vlt-navbar vlt-navbar--transparent vlt-navbar--main vlt-navbar--sticky vlt-nav--default">
+        <div class="vlt-navbar vlt-navbar--main vlt-navbar--sticky vlt-nav--default">
           <div class="container">
             <div class="vlt-navbar-inner">
               <div class="vlt-navbar-inner--left">
@@ -675,9 +675,11 @@
                       <textarea class="vlt-form-control" rows="5" placeholder=" "></textarea>
                       <label class="vlt-form-label">Комментарий*</label>
                     </div>
-                    <div class="form-submit d-flex align-items-center">
-                      <button class="vlt-btn vlt-btn--secondary vlt-btn--lg">Отправить</button>
-                      <p class="has-gray-color" style="padding-left: 60px; font-size: 16px">
+                    <div class="form-submit d-flex flex-wrap align-items-center">
+                      <button class="vlt-btn vlt-btn--secondary vlt-btn--lg" style="margin-right: 60px">
+                        Отправить
+                      </button>
+                      <p class="has-gray-color flex-grow-1 pt-2 pb-2" style="font-size: 16px">
                         Отправляя данную форму вы соглашаетесь<br />
                         с <a class="has-gray-color has-underline" href="#">политикой конфиденциальности</a>
                       </p>
@@ -796,12 +798,16 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-6">
-            <a class="flex-grow-0 has-underline has-light-gray-color" href="#">Политика<br />конфиденциальности</a>
+            <a class="flex-grow-0 has-underline has-light-gray-color link-policy" href="#"
+              >Политика<br />конфиденциальности</a
+            >
           </div>
-          <div
-            class="col-12 col-sm-6 col-lg-6 d-flex justify-content-between align-items-end flex-wrap align-self-end has-light-gray-color"
-          >
-            <span>ООО «‎Зебра»</span>‎<span 312329567994>ИНН 312329567994</span><span>ОГРН 1093123001960</span>
+          <div class="col-12 col-sm-6 col-lg-6 d-flex align-items-end has-light-gray-color">
+            <div class="row" style="font-size: 16px">
+              <div class="col-12 col-sm-auto">ООО «‎Зебра»</div>
+              <div class="col-12 col-sm-auto">ИНН 312329567994</div>
+              <div class="col-12 col-sm-auto">ОГРН 1093123001960</div>
+            </div>
           </div>
         </div>
       </div>
