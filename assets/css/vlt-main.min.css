@@ -2526,7 +2526,7 @@ dl dd {
   background-position: left bottom;
   background-size: 400px;
 }
-@media only screen and (max-width: 819px) {
+@media only screen and (max-width: 970px) {
   .vlt-footer--style-1 [class^='col-'] + [class^='col-'] {
     margin-top: 30px;
   }
@@ -7946,7 +7946,12 @@ a.has-underline:hover {
     max-width: 540px;
   }
 }
-
+@media (max-width: 970px) {
+  .footer-items .col-sm-auto {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media (min-width: 992px) {
   .modal-body {
     margin: 0 auto;
