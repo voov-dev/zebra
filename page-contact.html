@@ -16,8 +16,8 @@
   </head>
 
   <body>
-    <div class="vlt-site-preloader" data-animate-to="M0 0h240v90H0z">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="90">
+    <div class="vlt-site-preloader" data-animate-to="M0 0h220v90H0z">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="90">
         <defs>
           <path
             id="a"
@@ -463,7 +463,7 @@
               </div>
               <div class="vlt-gap-30"></div>
               <p class="text-center has-gray-color">
-                Отправляя данную форму вы соглашаетесь с
+                Отправляя данную форму, вы соглашаетесь с
                 <a class="has-gray-color has-underline" href="#">политикой конфиденциальности</a>
               </p>
             </form>
@@ -475,12 +475,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-5 offset-md-1">
-                <div class="vlt-simple-image">
-                  <div class="vlt-simple-image__mask" data-aos="image-mask-animation" data-aos-delay="0">
-                    <div class="inside"></div>
-                  </div>
-                  <img src="assets/img/contact-office-01.png" alt="" loading="lazy" />
-                </div>
+                <div id="map-1" class="vlt-simple-image" style="min-height: 265px;"></div>
                 <div class="vlt-gap-35"></div>
                 <div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
                   <h5><a href="#">Победа</a></h5>
@@ -498,12 +493,7 @@
                 <div class="vlt-gap-60--sm"></div>
               </div>
               <div class="col-md-5">
-                <div class="vlt-simple-image">
-                  <div class="vlt-simple-image__mask" data-aos="image-mask-animation" data-aos-delay="100">
-                    <div class="inside"></div>
-                  </div>
-                  <img src="assets/img/contact-office-01.png" alt="" loading="lazy" />
-                </div>
+                <div id="map-2" class="vlt-simple-image" style="min-height: 265px;"></div>
                 <div class="vlt-gap-35"></div>
                 <div class="vlt-animated-block" data-aos="fade" data-aos-delay="100">
                   <h5></i><a href="#">Костюкова</a></h5>
@@ -669,7 +659,7 @@
             </div>
             <div class="vlt-gap-40"></div>
             <p class="modal-body__content modal-body__content--narrow">
-              Ваши контактные данные и вопрос в ближайшее время будет рассмотрен нашими специалистами и очень скоро мы
+              Ваши контактные данные и вопрос в ближайшее время будет рассмотрен нашими специалистами, и очень скоро мы
               обязательно с вами свяжемся!
             </p>
             <div class="vlt-gap-90"></div>
@@ -680,6 +670,49 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=c71f1ef2-a698-4a2f-bf48-bae676848e90&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      ymaps.ready(function () {
+        var mapOne = new ymaps.Map('map-1', {
+          center: [50.595282, 36.572535],
+          zoom: 17,
+        });
+
+        mapOne.geoObjects.add(
+          new ymaps.Placemark(
+            [50.595282, 36.572535],
+            {
+              balloonContent: 'До 18:00',
+              iconCaption: 'Зебра',
+            },
+            {
+              preset: 'islands#redDotIcon',
+            },
+          ),
+        );
+
+        var mapTwo = new ymaps.Map('map-2', {
+          center: [50.578608, 36.591095],
+          zoom: 17,
+        });
+
+        mapTwo.geoObjects.add(
+          new ymaps.Placemark(
+            [50.578608, 36.591095],
+            {
+              balloonContent: 'До 18:00',
+              iconCaption: 'Зебра',
+            },
+            {
+              preset: 'islands#redDotIcon',
+            },
+          ),
+        );
+      });
+    </script>
 
     <script src="assets/vendors/jquery-3.5.1.min.js"></script>
     <script src="assets/scripts/vlt-plugins.js"></script>

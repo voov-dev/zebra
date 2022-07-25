@@ -1589,7 +1589,9 @@
 	gsap.to(el.find('#vlt-site-preloader-path'), 1, {
 		attr: {
 			d: animateTo
-		}
+    },
+    ease: "ease",
+    repeatRefresh: true
 	});
 
 	VLTJS.document.imagesLoaded(function () {
@@ -1878,7 +1880,10 @@
 					autoplay: autoplay ? {
 						delay: autoplay_speed,
 						disableOnInteraction: false
-					} : false,
+          } : false,
+          autoplay: {
+            delay: 25000,
+          },
 					autoHeight: true,
 					slidesOffsetBefore: 100,
 					slidesOffsetBefore: slider_offset ? $('.container').get(0).getBoundingClientRect().left + 15 : false,
@@ -2461,7 +2466,10 @@
 				grabCursor: true,
 				speed: 1000,
 				slidesPerView: 1,
-				effect: 'fade',
+        effect: 'fade',
+        autoplay: {
+            delay: 20000,
+          },
 				touchReleaseOnEdges: true,
 				navigation: {
 					nextEl: $(anchor).find('.vlt-swiper-button-next'),
