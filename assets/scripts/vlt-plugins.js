@@ -1352,10 +1352,10 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 			return;
 		}
 
-		// Some old versions of Android don't have Function.prototype.bind
-		function bind(method, context) {
-			return function() { return method.apply(context, arguments); };
-		}
+		// // Some old versions of Android don't have Function.prototype.bind
+		// function bind(method, context) {
+		// 	return function() { return method.apply(context, arguments); };
+		// }
 
 
 		var methods = ['onMouse', 'onClick', 'onTouchStart', 'onTouchMove', 'onTouchEnd', 'onTouchCancel'];
@@ -1687,10 +1687,10 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 		this.touchStartX = touch.pageX;
 		this.touchStartY = touch.pageY;
 
-		// Prevent phantom clicks on fast double-tap (issue #36)
-		if ((event.timeStamp - this.lastClickTime) < this.tapDelay) {
-			event.preventDefault();
-		}
+		// // Prevent phantom clicks on fast double-tap (issue #36)
+		// if ((event.timeStamp - this.lastClickTime) < this.tapDelay) {
+		// 	event.preventDefault();
+		// }
 
 		return true;
 	};

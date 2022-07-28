@@ -106,10 +106,10 @@
 			return;
 		}
 
-		// Some old versions of Android don't have Function.prototype.bind
-		function bind(method, context) {
-			return function() { return method.apply(context, arguments); };
-		}
+		// // Some old versions of Android don't have Function.prototype.bind
+		// function bind(method, context) {
+		// 	return function() { return method.apply(context, arguments); };
+		// }
 
 
 		var methods = ['onMouse', 'onClick', 'onTouchStart', 'onTouchMove', 'onTouchEnd', 'onTouchCancel'];
