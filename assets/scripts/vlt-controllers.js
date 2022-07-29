@@ -2232,28 +2232,6 @@
                 },
             });
 
-            // swiper.on('init slideChange', function() {
-            //     var brightness = showcase.find('.swiper-slide').eq(swiper.realIndex).find('.vlt-project-showcase__item').data('brightness');
-            //     switch (brightness) {
-            //         case 'light':
-            //             if ($('.vlt-navbar').hasClass('vlt-navbar--white-text-on-top')) {
-            //                 $('.vlt-navbar').removeClass('vlt-navbar--white-text-on-top');
-            //             }
-            //             if ($('.vlt-site-fixed-bar').hasClass('has-white-color')) {
-            //                 $('.vlt-site-fixed-bar').removeClass('has-white-color');
-            //             }
-            //             break;
-            //         case 'dark':
-            //             if (!$('.vlt-navbar').hasClass('vlt-navbar--white-text-on-top')) {
-            //                 $('.vlt-navbar').addClass('vlt-navbar--white-text-on-top');
-            //             }
-            //             if (!$('.vlt-site-fixed-bar').hasClass('has-white-color')) {
-            //                 $('.vlt-site-fixed-bar').addClass('has-white-color');
-            //             }
-            //             break;
-            //     }
-            // });
-
             swiper.on('init', function () {
               var current = swiper.realIndex;
                 navigationItem.eq(current).addClass('is-active');
@@ -2286,11 +2264,15 @@
 
             });
 
-            swiper.on('slideChangeTransitionEnd', function() {
+        swiper.on('slideChangeTransitionEnd', function () {
+
                 var el = $(anchor),
                     current = swiper.realIndex,
                     total = showcase.find('.swiper-slide').not('.swiper-slide-duplicate').length,
-                    scale = (current + 1) / total;
+                  scale = (current + 1) / total;
+
+                $('.vlt-project-showcase__navigation').find('.is-active').removeClass('is-active');
+                $(navigationItem[current]).addClass('is-active');
 
                 if (el.data('direction') == 'vertical') {
                     el.find('.current').text(VLTJS.addLedingZero(current + 1));
