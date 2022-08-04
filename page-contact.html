@@ -420,6 +420,7 @@
             <img
               class="vlt-particle"
               src="assets/img/square-plus-pattern.png"
+              srcset="assets/img/square-plus-pattern.png, assets/img/square-plus-pattern@2x.png 2x"
               data-animation-name="fadeInUp"
               alt=""
               style="position: absolute; top: -265px; right: -125px; max-width: 232px; --animate-delay: 0.5s"
@@ -649,6 +650,7 @@
             <img
               class="vlt-particle"
               src="assets/img/square-plus-pattern.png"
+              srcset="assets/img/square-plus-pattern.png, assets/img/square-plus-pattern@2x.png 2x"
               data-animation-name="fadeInLeft"
               alt=""
               style="position: absolute; top: 35%; right: -10%; max-width: 232px; --animate-delay: 0.5s"
@@ -670,6 +672,11 @@
         </div>
       </div>
     </div>
+    <a class="to-top" id="to-top" href="#">
+      <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.563 20V4.75l5.95 7L17 10 8.5 0 0 10l1.488 1.75 5.95-7V20h2.125Z" fill="#fff" />
+      </svg>
+    </a>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=c71f1ef2-a698-4a2f-bf48-bae676848e90&lang=ru_RU"
       type="text/javascript"
@@ -677,13 +684,13 @@
     <script type="text/javascript">
       ymaps.ready(function () {
         var mapOne = new ymaps.Map('map-1', {
-          center: [50.595282, 36.572535],
+          center: [50.595419, 36.572204],
           zoom: 17,
         });
 
         mapOne.geoObjects.add(
           new ymaps.Placemark(
-            [50.595282, 36.572535],
+            [50.595419, 36.572204],
             {
               balloonContent: 'До 18:00',
               iconCaption: 'Зебра',
