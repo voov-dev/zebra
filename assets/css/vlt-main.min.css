@@ -4909,25 +4909,14 @@ dl dd {
   z-index: 120;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
   color: #a70000;
   background-color: #fff;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  will-change: auto;
 }
 .vlt-site-preloader.is-loaded {
   visibility: hidden;
@@ -5225,19 +5214,7 @@ dl dd {
 .fancybox-content .fancybox-close-small,
 .fancybox-navigation .fancybox-close-small,
 .fancybox-toolbar .fancybox-close-small {
-  top: -30px;
-  right: -30px;
-  opacity: 1;
-}
-
-@media (max-width: 1439px) {
-  .fancybox-content .fancybox-close-small,
-  .fancybox-navigation .fancybox-close-small,
-  .fancybox-toolbar .fancybox-close-small {
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
+  display: none;
 }
 .fancybox-navigation .fancybox-button--arrow_left:hover i {
   -webkit-animation: vlt_animate_icon_left 0.3s forwards;

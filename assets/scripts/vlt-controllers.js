@@ -189,57 +189,6 @@
 /***********************************************
  * HEDAER: MENU DEFAULT
  ***********************************************/
-(function ($) {
-  if(document.getElementById('to-top')) {
-
-    document.getElementById('to-top').addEventListener('click', function(e) {
-      e.preventDefault();
-      var scroll = window.pageYOffset;
-      var targetTop = 0;
-      var scrollDiff = (scroll - targetTop) * -1;
-      animate({
-        duration: 500,
-        timing: function(timeFraction) {
-          return Math.pow(timeFraction, 4); // https://learn.javascript.ru/js-animation
-        },
-        draw: function(progress) {
-          var scrollNow = scroll + progress * scrollDiff;
-          window.scrollTo(0,scrollNow);
-        }
-      });
-    }, false);
-
-    window.addEventListener('scroll', visibilityToggle);
-    visibilityToggle();
-
-  }
-
-  function visibilityToggle() {
-    if(window.pageYOffset >= 500) {
-      document.getElementById('to-top').classList.add('to-top--visible');
-    }
-    else {
-      document.getElementById('to-top').classList.remove('to-top--visible');
-    }
-  }
-
-  function animate(_ref) {
-    var timing = _ref.timing,
-        draw = _ref.draw,
-        duration = _ref.duration;
-    var start = performance.now();
-    requestAnimationFrame(function animate(time) {
-      var timeFraction = (time - start) / duration;
-      if (timeFraction > 1) timeFraction = 1;
-      var progress = timing(timeFraction);
-      draw(progress);
-      if (timeFraction < 1) {
-        requestAnimationFrame(animate);
-      }
-    });
-  }
-})(jQuery);
-
 (function($) {
 
     'use strict';
@@ -663,10 +612,11 @@
             menuIsOpen = true;
         },
         close_menu: function(menu, menuToggle) {
-            menu.slideUp();
-            menuToggle.removeClass('vlt-menu-burger--opened');
-            VLTJS.html.css(overflow, 'inherit');
-            menuIsOpen = false;
+          menu.slideUp();
+          menuToggle.removeClass('vlt-menu-burger--opened');
+          VLTJS.html.css(overflow, 'inherit');
+          VLTJS.html.css(overflow, 'inherit');
+          menuIsOpen = false;
         }
     };
 
@@ -1656,44 +1606,39 @@
  * TEMPLATE: PRELOADER
  ***********************************************/
 (function($) {
-    'use strict';
+  'use strict';
 
-    // check if plugin defined
-    if (typeof gsap == 'undefined') {
-        return;
-    }
+  if (typeof gsap == 'undefined') {
+    return;
+  }
 
-    var el = $('.vlt-site-preloader'),
-        animateTo = el.data('animate-to');
+  var el = $('.vlt-site-preloader'),
+    animateTo = el.data('animate-to');
 
-    gsap.to(el.find('#vlt-site-preloader-path'), 1, {
-        attr: {
-            d: animateTo
-        },
-        ease: "ease",
-        repeatRefresh: true
+
+  gsap.to(el.find('#vlt-site-preloader-path'), {
+    attr: {
+      d: animateTo
+    },
+    lazy: false,
+    ease: "ease", repeatRefresh: true
+  });
+
+  VLTJS.document.imagesLoaded(function() {
+    setTimeout(function () {
+      el.addClass('is-loaded');
+    }, 1000);
+  });
+
+  if (el.length) {
+    el.on(VLTJS.transitionEnd, function() {
+      VLTJS.window.trigger('vlt.site-loaded');
     });
-
-    VLTJS.document.imagesLoaded(function() {
-        setTimeout(function() {
-            el.addClass('is-loaded');
-        }, 1000);
+  } else {
+    VLTJS.window.on('load', function() {
+      VLTJS.window.trigger('vlt.site-loaded');
     });
-
-    if (el.length) {
-
-        el.on(VLTJS.transitionEnd, function() {
-            VLTJS.window.trigger('vlt.site-loaded');
-        });
-
-    } else {
-
-        VLTJS.window.on('load', function() {
-            VLTJS.window.trigger('vlt.site-loaded');
-        });
-
-    }
-
+  }
 })(jQuery);
 /***********************************************
  * TEMPLATE: STICKY NAVBAR
@@ -2491,6 +2436,57 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+(function ($) {
+  if(document.getElementById('to-top')) {
+
+    document.getElementById('to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      var scroll = window.pageYOffset;
+      var targetTop = 0;
+      var scrollDiff = (scroll - targetTop) * -1;
+      animate({
+        duration: 500,
+        timing: function(timeFraction) {
+          return Math.pow(timeFraction, 4); // https://learn.javascript.ru/js-animation
+        },
+        draw: function(progress) {
+          var scrollNow = scroll + progress * scrollDiff;
+          window.scrollTo(0,scrollNow);
+        }
+      });
+    }, false);
+
+    window.addEventListener('scroll', visibilityToggle);
+    visibilityToggle();
+
+  }
+
+  function visibilityToggle() {
+    if(window.pageYOffset >= 500) {
+      document.getElementById('to-top').classList.add('to-top--visible');
+    }
+    else {
+      document.getElementById('to-top').classList.remove('to-top--visible');
+    }
+  }
+
+  function animate(_ref) {
+    var timing = _ref.timing,
+        draw = _ref.draw,
+        duration = _ref.duration;
+    var start = performance.now();
+    requestAnimationFrame(function animate(time) {
+      var timeFraction = (time - start) / duration;
+      if (timeFraction > 1) timeFraction = 1;
+      var progress = timing(timeFraction);
+      draw(progress);
+      if (timeFraction < 1) {
+        requestAnimationFrame(animate);
+      }
+    });
+  }
+})(jQuery);
 
 (function($) {
     if ($('#successOne').length) {
